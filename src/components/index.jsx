@@ -17,3 +17,4 @@ export { default as CalendarHeader } from "./CalendarHeader";
 export { default as CalendarSidebar } from "./CalendarSidebar";
 export { default as Month } from "./Month";
 export { default as EventModal } from "./EventModal";
+export { default as KanbanColumn } from "./KanbanColumn";

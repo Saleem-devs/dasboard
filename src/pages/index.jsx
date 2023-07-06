@@ -4,3 +4,6 @@ export { default as Employees } from "./Employees";
 export { default as Invoice } from "./Invoice";
 export { default as Customers } from "./Customers";
 export { default as Calendar } from "./Calendar";
+export { default as AddInvoice } from "./AddInvoice";
+export { default as EditInvoice } from "./EditInvoice";
+export { default as ViewInvoice } from "./ViewInvoice";

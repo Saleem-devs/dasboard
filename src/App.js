@@ -16,6 +16,9 @@ import {
   Employees,
   Kanban,
   Projects,
+  AddInvoice,
+  ViewInvoice,
+  EditInvoice,
 } from "./pages";
 import "./App.css";
 import { useStateContext } from "./contexts/ContextProvider";
@@ -75,11 +78,13 @@ function App() {
 
                 {/* Pages  */}
                 <Route path="/employees" element={<Employees />} />
-                <Route path="/customers" element={<Customers />} />
+                <Route path="/clients" element={<Customers />} />
 
                 {/* Apps  */}
                 <Route path="/kanban" element={<Kanban />} />
                 <Route path="/invoice" element={<Invoice />} />
+
+                <Route path="/invoice/:id" element={<ViewInvoice />} />
                 <Route path="/calendar" element={<Calendar />} />
               </Routes>
             </div>

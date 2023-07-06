@@ -34,16 +34,16 @@ const Day = ({ day, rowIdx }) => {
   };
 
   return (
-    <div className=" border border-gray-200 flex flex-col">
+    <div className=" border border-gray-200 dark:border-gray-600 flex flex-col">
       <header className="flex flex-col items-center">
         {rowIdx === 0 && (
-          <p className="text-sm mt-1 h-[20px] ">
+          <p className="text-sm mt-1 h-[20px] dark:text-white ">
             {day.format("ddd").toUpperCase()}
           </p>
         )}
 
         <p
-          className={`text-sm p-1 my-1 text-center ${getCurrentDayClass()}`}
+          className={`text-sm p-1 my-1 text-center dark:text-white ${getCurrentDayClass()}`}
           style={{ backgroundColor: currentDay ? currentColor : "" }}
         >
           {day.format("DD")}

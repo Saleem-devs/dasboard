@@ -47,25 +47,25 @@ export default function SmallCalendar() {
   return (
     <div className="mt-9 w-full max-w-md">
       <header className="flex items-center gap-5">
-        <p className="text-gray-500 font-bold">
+        <p className="text-gray-500 dark:text-gray-200 font-bold">
           {dayjs(new Date(dayjs().year(), currentMonthIdx)).format("MMMM YYYY")}
         </p>
         <div>
           <button
-            className=" cursor-pointer text-gray-600 mx-2"
+            className=" cursor-pointer text-gray-600 dark:text-gray-400 mx-2"
             onClick={handlePrevMonth}
           >
             <FaAngleLeft />
           </button>
           <button
-            className=" cursor-pointer text-gray-600 mx-2"
+            className=" cursor-pointer text-gray-600 dark:text-gray-400 mx-2"
             onClick={handleNextMonth}
           >
             <FaAngleRight />
           </button>
         </div>
       </header>
-      <div className="grid grid-cols-7 grid-rows-6">
+      <div className="grid grid-cols-7 grid-rows-6 dark:text-white">
         {currentMonth[0].map((day, i) => (
           <span key={i} className="text-sm py-1 ">
             {day.format("dd").charAt(0)}
